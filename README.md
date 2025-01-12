@@ -49,11 +49,11 @@ include:
   
  • Variations of these models are combined using an IMM. The IMM variations are tested to
   determine which produces the most accurate predictions, which include:
-    • IMM-CV-CA fuses the modes of CV and CA to produce position predictions when an
+  • IMM-CV-CA fuses the modes of CV and CA to produce position predictions when an
     aircraft switches between non-manoeuvring and manoeuvring states.
-    • IMM-CV-CA-CT2D, which adds to the IMM-CV-CA model by adding a turn
+  • IMM-CV-CA-CT2D, which adds to the IMM-CV-CA model by adding a turn
     component about the Z-axis with a constant turn rate.
-    • IMM-CV-CA-CT3D, which adds tracking for circular motion models in X, Y and Z
+  • IMM-CV-CA-CT3D, which adds tracking for circular motion models in X, Y and Z
     with a constant turn rate. 
 
 • Simulation of static and dynamic intruders on the flight path that breaches the defined
