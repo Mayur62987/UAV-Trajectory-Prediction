@@ -68,3 +68,7 @@ include:
   ![image](https://github.com/user-attachments/assets/f525e672-e568-48b2-ac24-6f0ef7b12cea)
 
 
+• Collision Alerts are defined by the following proceedure 
+  ![image](https://github.com/user-attachments/assets/af0417f5-9c1b-4a92-813c-4fd860a0dde9)
+
+
