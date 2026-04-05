@@ -379,7 +379,7 @@ UAV-Trajectory-Prediction/
 │       ├── filtered_data.mat
 │       └── For_linear_filter.mat
 │
-├── Images/                      ← Thesis figures
+├── images/                      ← Thesis figures
 │
 ├── UAV Trajectory Prediction for Collision Avoidance-signed.pdf 
 └── README.md
