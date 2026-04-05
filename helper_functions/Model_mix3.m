@@ -1,0 +1,6 @@
+  function [ x_pro, P ] = Model_mix3( u,x1,x2,x3,P1,P2,P3)
+  x_pro = x1*u(1) + x2*u(2) + x3*u(3);
+  P = u(1)*(P1 + (x1 - x_pro)*((x1-x_pro)'))+...
+            u(2)*(P2 + (x2-x_pro)*((x2-x_pro)'))+...
+            u(3)*(P3 + (x3-x_pro)*((x3-x_pro)'))
+  end
