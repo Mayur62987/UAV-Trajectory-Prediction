@@ -4,6 +4,10 @@
 
 Short-term trajectory prediction system for UAV collision avoidance using ADS-B data and Interacting Multiple Model (IMM) Kalman Filters. Forms the **Detect** component of a Detect and Avoid (DAA) system for UAV Beyond Visual Line of Sight (BVLOS) operation.
 
+Automatic Dependent Surveillance-Broadcast (ADS-B)offers data periodically, which can be used to create situational awareness and predict the future state of an intruder aircraft. ADS-B data is gathered using a Software Defined Radio (SDR). An Interacting Multiple Model (IMM) is used to predict future positions of aircraft by combining linear Kalman Filter models. Three variations of IMMs were examined: Constant
+Velocity Constant Acceleration (CV-CA); Constant Velocity Constant Acceleration with 2D Coordinated Turn (CV-CA-2DCT) and Constant Velocity Constant Acceleration with 3D Coordinated Turn (CV-CA-3DCT). The IMM CV-CA-2DCT has the highest accuracy of
+prediction when estimating real flight positional data. Collisions are simulated with both static and dynamic intruders by propagating an Intruder Protected Zone (IPZ) using IMM predictions.
+
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2020a%2B-orange)](https://www.mathworks.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 [![Keywords](https://img.shields.io/badge/Keywords-ADS--B%20%7C%20IMM%20%7C%20Kalman%20Filter%20%7C%20UAV%20%7C%20Collision%20Avoidance-green)]()
@@ -32,8 +36,41 @@ Short-term trajectory prediction system for UAV collision avoidance using ADS-B 
 As UAV use cases rapidly expand, integration into the National Airspace (NAS) requires robust Detect and Avoid (DAA) capabilities for BVLOS operation. This project:
 
 1. **Acquires** real ADS-B flight data using an RTL-SDR receiver and Raspberry Pi running Dump1090
+
+  The periodically broadcast ADS-B signal of surrounding aircraft is received via a telescopic dipole antenna
+  connected to the SDR receiver. The SDR communicates with the Raspberry PI for radio wave
+  access, decoding is done via Dump1090, a Mode S ES decoder, operating on PiAware client
+  software. The decoded ADS-B data is pushed to an ADS-B database after each read cycle; this
+  information is made available on port 8080 of the Raspberry Pi’s local IP address. The decoded
+  data, which is shared on port 8080, is pulled via an HTTP read within MATLAB. The port is
+  periodically read at a rate of 1Hz to flight data contained in each time frame. This data is
+  converted into appropriate units and is stored as a flight object for each unique ICAO callsign. 
+  
+
 2. **Predicts** future aircraft positions using three IMM Kalman Filter variants
-3. **Detects** potential collisions by propagating an Intruder Protected Zone (IPZ) modelled as a collision cylinder
+  Building state prediction models based on linear state dynamics and combining linear
+  models with an IMM, Interacting Multiple Model. To predict the trajectory of an aircraft moving with linear dynamics,
+  3 motions are  considered for testing. The first model, Constant Velocity (CV), considers the aircraft moving at
+  a constant speed in the X, Y and Z axes. The second model, Constant Acceleration (CA)
+  considers the aircraft manoeuvring about all axes. Two variations of turn models are
+  constructed: a Coordinated Turn (CT) 2D, which assumes the aircraft executes turns at a
+  constant angular rate of change about the Z-axis and a CT 3D model in which turns are executed
+  about all axes.
+  ![image](https://github.com/user-attachments/assets/f7b19a92-4932-466f-875c-b6b28a75700d)
+  
+   
+4. **Detects** potential collisions by propagating an Intruder Protected Zone (IPZ) modelled as a collision cylinder
+
+   Simulation of static and dynamic intruders on the flight path that breaches the defined
+  IPZ, Intruder Protected Zone, to determine the time to a collision.
+  The size of the simulated IPZ can be seen below:
+  ![image](https://github.com/user-attachments/assets/711cab9a-0654-4a85-b4f0-9762fd33c7e0)
+
+  ![image](https://github.com/user-attachments/assets/d2a4c109-ba2f-426d-9081-e6ca9ec85f9f)
+
+  ![image](https://github.com/user-attachments/assets/1a749a61-1510-4de9-bb38-ecc4e179d30c)
+
+  ![image](https://github.com/user-attachments/assets/f525e672-e568-48b2-ac24-6f0ef7b12cea)
 
 The system targets the **TCAS Resolution Advisory (RA) lookahead window of 15–35 seconds** — the same standard used in manned aviation collision avoidance.
 
@@ -50,6 +87,8 @@ The system targets the **TCAS Resolution Advisory (RA) lookahead window of 15–
 ## System Architecture
 
 ![System Design](images/system_architecture.png)
+
+![System Flow Diagram](images/FlowDiagram.png)
 
 **Data pipeline:** Aircraft broadcast ADS-B OUT → decoded by Dump1090 → served as JSON → filtered to 13 fields → converted to ECEF (WGS84) → fed to IMM predictor → IPZ cylinders propagated → collision check at each timestep.
 
