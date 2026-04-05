@@ -37,41 +37,38 @@ As UAV use cases rapidly expand, integration into the National Airspace (NAS) re
 
 1. **Acquires** real ADS-B flight data using an RTL-SDR receiver and Raspberry Pi running Dump1090
 
-  The periodically broadcast ADS-B signal of surrounding aircraft is received via a telescopic dipole antenna
-  connected to the SDR receiver. The SDR communicates with the Raspberry PI for radio wave
-  access, decoding is done via Dump1090, a Mode S ES decoder, operating on PiAware client
-  software. The decoded ADS-B data is pushed to an ADS-B database after each read cycle; this
-  information is made available on port 8080 of the Raspberry Pi’s local IP address. The decoded
-  data, which is shared on port 8080, is pulled via an HTTP read within MATLAB. The port is
-  periodically read at a rate of 1Hz to flight data contained in each time frame. This data is
-  converted into appropriate units and is stored as a flight object for each unique ICAO callsign. 
+The periodically broadcast ADS-B signal of surrounding aircraft is received via a telescopic dipole antenna
+connected to the SDR receiver. The SDR communicates with the Raspberry PI for radio wave
+access, decoding is done via Dump1090, a Mode S ES decoder, operating on PiAware client
+software. The decoded ADS-B data is pushed to an ADS-B database after each read cycle; this
+information is made available on port 8080 of the Raspberry Pi’s local IP address. The decoded
+data, which is shared on port 8080, is pulled via an HTTP read within MATLAB. The port is
+periodically read at a rate of 1Hz to flight data contained in each time frame. This data is
+converted into appropriate units and is stored as a flight object for each unique ICAO callsign. 
   
 
 2. **Predicts** future aircraft positions using three IMM Kalman Filter variants
-  Building state prediction models based on linear state dynamics and combining linear
-  models with an IMM, Interacting Multiple Model. To predict the trajectory of an aircraft moving with linear dynamics,
-  3 motions are  considered for testing. The first model, Constant Velocity (CV), considers the aircraft moving at
-  a constant speed in the X, Y and Z axes. The second model, Constant Acceleration (CA)
-  considers the aircraft manoeuvring about all axes. Two variations of turn models are
-  constructed: a Coordinated Turn (CT) 2D, which assumes the aircraft executes turns at a
-  constant angular rate of change about the Z-axis and a CT 3D model in which turns are executed
-  about all axes.
-  ![image](https://github.com/user-attachments/assets/f7b19a92-4932-466f-875c-b6b28a75700d)
+   
+Building state prediction models based on linear state dynamics and combining linear
+models with an IMM, Interacting Multiple Model. To predict the trajectory of an aircraft moving with linear dynamics,
+3 motions are  considered for testing. The first model, Constant Velocity (CV), considers the aircraft moving at
+a constant speed in the X, Y and Z axes. The second model, Constant Acceleration (CA)
+considers the aircraft manoeuvring about all axes. Two variations of turn models are
+constructed: a Coordinated Turn (CT) 2D, which assumes the aircraft executes turns at a
+constant angular rate of change about the Z-axis and a CT 3D model in which turns are executed
+about all axes.
+![image](https://github.com/user-attachments/assets/f7b19a92-4932-466f-875c-b6b28a75700d)
   
    
-4. **Detects** potential collisions by propagating an Intruder Protected Zone (IPZ) modelled as a collision cylinder
+3. **Detects** potential collisions by propagating an Intruder Protected Zone (IPZ) modelled as a collision cylinder
 
-   Simulation of static and dynamic intruders on the flight path that breaches the defined
-  IPZ, Intruder Protected Zone, to determine the time to a collision.
-  The size of the simulated IPZ can be seen below:
-  ![image](https://github.com/user-attachments/assets/711cab9a-0654-4a85-b4f0-9762fd33c7e0)
+Simulation of static and dynamic intruders on the flight path that breaches the defined
+IPZ, Intruder Protected Zone, to determine the time to a collision.
+The size of the simulated IPZ can be seen below:
+![image](https://github.com/user-attachments/assets/711cab9a-0654-4a85-b4f0-9762fd33c7e0)
 
-  ![image](https://github.com/user-attachments/assets/d2a4c109-ba2f-426d-9081-e6ca9ec85f9f)
-
-  ![image](https://github.com/user-attachments/assets/1a749a61-1510-4de9-bb38-ecc4e179d30c)
-
-  ![image](https://github.com/user-attachments/assets/f525e672-e568-48b2-ac24-6f0ef7b12cea)
-
+![image](https://github.com/user-attachments/assets/d2a4c109-ba2f-426d-9081-e6ca9ec85f9f)
+  
 The system targets the **TCAS Resolution Advisory (RA) lookahead window of 15–35 seconds** — the same standard used in manned aviation collision avoidance.
 
 ### IMM Variants Implemented
