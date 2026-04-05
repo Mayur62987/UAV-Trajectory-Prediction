@@ -79,13 +79,13 @@ Real ADS-B flight data was recorded on **11/08/2021** over a **6-hour period**, 
 
 **SDR signal directionality and coverage:**
 
-![SDR Directionality Strength](Images/sdr_directionality.png)
+![SDR Directionality Strength](images/coverage_range.png)
 *Figure 5-1: SDR directionality strength during data capture — weakness observed south-southwest due to antenna mounting obstructions*
 
-![ADS-B Coverage Map](Images/adsb_coverage_map.png)
+![ADS-B Coverage Map](images/coverage_map.png)
 *Figure 5-2: Coverage map of incoming ADS-B information, centred at SDR receiver location*
 
-![ADS-B Range Statistics](Images/adsb_range_stats.png)
+![ADS-B Range Statistics](images/coverage_range_chart.png)
 *Figure 5-3: Range of received ADS-B messages — majority within 100-mile radius, limited by antenna SNR*
 
 ---
