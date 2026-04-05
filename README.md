@@ -49,23 +49,7 @@ The system targets the **TCAS Resolution Advisory (RA) lookahead window of 15–
 
 ## System Architecture
 
-```
-ADS-B Signal (1090 MHz)
-        |
-   [RTL-SDR Receiver]
-        | USB 3.0
-   [Raspberry Pi 4B]  <-- Dump1090-fa + PiAware
-        | HTTP:8080
-   [MATLAB Host PC]   <-- webread() @ 1 Hz
-        |
-   +----+----+----+
-   |         |         |
-[Filter]  [IMM KF]  [Collision
-[& Conv]  [Predict]  [Detection]
-   |         |         |
-ECEF     Predicted   checkCollision()
-x,y,z    Positions   --> CPA Alert
-```
+![System Design](images/system_architecture.png)
 
 **Data pipeline:** Aircraft broadcast ADS-B OUT → decoded by Dump1090 → served as JSON → filtered to 13 fields → converted to ECEF (WGS84) → fed to IMM predictor → IPZ cylinders propagated → collision check at each timestep.
 
@@ -253,10 +237,10 @@ A constant-velocity intruder was simulated on an opposing trajectory toward flig
 
 #### Separation Volume Visualisation
 
-![Collision Cylinder](Images/collision_cylinder.png)
+![Collision Cylinder](images/separation_volume.png)
 *Figure 4-5: Aircraft IPZ modelled as a collision cylinder (radius = 926 m, height = 304.8 m for owner)*
 
-![Separation Volume Propagation](Images/separation_volume_propagation.png)
+![Separation Volume Propagation](images/simulated_collision.png)
 *Figure 4-6: Separation volume propagation for a dynamic intruder*
 
 ---
