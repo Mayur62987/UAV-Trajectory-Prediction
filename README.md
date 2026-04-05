@@ -83,8 +83,10 @@ The system targets the **TCAS Resolution Advisory (RA) lookahead window of 15–
 
 ## System Architecture
 
+System Hardware
 ![System Design](images/system_architecture.png)
 
+System Flow Diagram
 ![System Flow Diagram](images/FlowDiagram.png)
 
 **Data pipeline:** Aircraft broadcast ADS-B OUT → decoded by Dump1090 → served as JSON → filtered to 13 fields → converted to ECEF (WGS84) → fed to IMM predictor → IPZ cylinders propagated → collision check at each timestep.
