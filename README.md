@@ -133,7 +133,7 @@ Four real flight trajectories were selected with differing dynamics to test pred
 ![DAL84 RMSE Comparison](images/DAL84/Compare35.jpg)
 *Figure 5-8: DAL84 RMSE vs Time — all predictor methods at Ts = 15s*
 
-![DAL84 Best Prediction](images/DAL84/best.jpg)
+![DAL84 Best Prediction](images/DAL84/Best.jpg)
 *Figure 5-9: DAL84 best trajectory prediction — IMM-CV-CA-3DCT*
 
 ---
