@@ -222,13 +222,13 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 **Flight RYR8213:**
 
-![RYR8213 Static Collision IMM CV-CA](images/collision/RYR8213/imm_cv_ca.png)
+![RYR8213 Static Collision IMM CV-CA](images/collision/RYR8123/imm_cv_ca.png)
 *Figure 5-43: RYR8213 collision time difference — IMM-CV-CA*
 
-![RYR8213 Static Collision IMM CV-CA-2DCT](images/collision/RYR8213/imm_2d.png)
+![RYR8213 Static Collision IMM CV-CA-2DCT](images/collision/RYR8123/imm_2d.png)
 *Figure 5-44: RYR8213 collision time difference — IMM-CV-CA-2DCT*
 
-![RYR8213 Static Collision IMM CV-CA-3DCT](images/collision/RYR8213/imm_3d.png)
+![RYR8213 Static Collision IMM CV-CA-3DCT](images/collision/RYR8123/imm_3d.png)
 *Figure 5-45: RYR8213 collision time difference — IMM-CV-CA-3DCT*
 
 **Flight EXS8L8:**
@@ -244,13 +244,13 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 **Average across all static test flights:**
 
-![Average Collision IMM CV-CA](Images/avg_collision_CVCA.png)
+![Average Collision IMM CV-CA](images/avg_collision_CVCA.png)
 *Figure 5-49: Average collision time difference across all flights — IMM-CV-CA (stable 15–30 s)*
 
-![Average Collision IMM CV-CA-2DCT](Images/avg_collision_CVCA2DCT.png)
+![Average Collision IMM CV-CA-2DCT](images/avg_collision_CVCA2DCT.png)
 *Figure 5-50: Average collision time difference — IMM-CV-CA-2DCT (best at 15 s)*
 
-![Average Collision IMM CV-CA-3DCT](Images/avg_collision_CVCA3DCT.png)
+![Average Collision IMM CV-CA-3DCT](images/avg_collision_CVCA3DCT.png)
 *Figure 5-51: Average collision time difference — IMM-CV-CA-3DCT (reliable at 15 s only)*
 
 ---
@@ -259,16 +259,16 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 A constant-velocity intruder was simulated on an opposing trajectory toward flight VLG8LV.
 
-![Dynamic Collision Simulation](Images/dynamic_collision_simulation.png)
+![Dynamic Collision Simulation](images/dynamic_collision_simulation.png)
 *Figure 4-13: Simulated collision with dynamic intruder — owner trajectory (blue), intruder (red)*
 
-![Dynamic Collision IMM CV-CA](Images/dynamic_collision_CVCA.png)
+![Dynamic Collision IMM CV-CA](images/dynamic_collision_CVCA.png)
 *Figure 5-52: Dynamic collision time difference — IMM-CV-CA*
 
-![Dynamic Collision IMM CV-CA-2DCT](Images/dynamic_collision_CVCA2DCT.png)
+![Dynamic Collision IMM CV-CA-2DCT](images/dynamic_collision_CVCA2DCT.png)
 *Figure 5-53: Dynamic collision time difference — IMM-CV-CA-2DCT (feasible to 25 s)*
 
-![Dynamic Collision IMM CV-CA-3DCT](Images/dynamic_collision_CVCA3DCT.png)
+![Dynamic Collision IMM CV-CA-3DCT](images/dynamic_collision_CVCA3DCT.png)
 *Figure 5-54: Dynamic collision time difference — IMM-CV-CA-3DCT*
 
 ---
