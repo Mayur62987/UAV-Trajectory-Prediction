@@ -178,7 +178,7 @@ Four real flight trajectories were selected with differing dynamics to test pred
 ![VLG84NC RMSE Comparison](images/VLG84NC/RMSE_compare.jpg)
 *Figure 5-32: VLG84NC RMSE vs Time — all predictor methods*
 
-![VLG84NC Best Prediction](images/VLG84NC/best_prediction.jpg)
+![VLG84NC Best Prediction](images/VLG84NC/best_trajectory.jpg)
 *Figure 5-33: VLG84NC best trajectory prediction — IMM-CV-CA-CT2D*
 
 ---
