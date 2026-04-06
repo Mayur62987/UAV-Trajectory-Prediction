@@ -200,46 +200,46 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 **Flight EZY89TP:**
 
-![EZY89TP Static Collision IMM CV-CA](Images/EZY89TP_collision_CVCA.png)
+![EZY89TP Static Collision IMM CV-CA](images/collision/EZY89TP/imm_ca_cv.png)
 *Figure 5-37: EZY89TP collision time difference — IMM-CV-CA*
 
-![EZY89TP Static Collision IMM CV-CA-2DCT](Images/EZY89TP_collision_CVCA2DCT.png)
+![EZY89TP Static Collision IMM CV-CA-2DCT](images/collision/EZY89TP/imm_2d.png)
 *Figure 5-38: EZY89TP collision time difference — IMM-CV-CA-2DCT*
 
-![EZY89TP Static Collision IMM CV-CA-3DCT](Images/EZY89TP_collision_CVCA3DCT.png)
+![EZY89TP Static Collision IMM CV-CA-3DCT](images/collision/EZY89TP/imm_3d.png)
 *Figure 5-39: EZY89TP collision time difference — IMM-CV-CA-3DCT*
 
 **Flight RYR56UE:**
 
-![RYR56UE Static Collision IMM CV-CA](Images/RYR56UE_collision_CVCA.png)
+![RYR56UE Static Collision IMM CV-CA](images/collision/RYR56UE/imm_ca_cv.png)
 *Figure 5-40: RYR56UE collision time difference — IMM-CV-CA*
 
-![RYR56UE Static Collision IMM CV-CA-2DCT](Images/RYR56UE_collision_CVCA2DCT.png)
+![RYR56UE Static Collision IMM CV-CA-2DCT](images/collision/RYR56UE/imm_2d.png)
 *Figure 5-41: RYR56UE collision time difference — IMM-CV-CA-2DCT*
 
-![RYR56UE Static Collision IMM CV-CA-3DCT](Images/RYR56UE_collision_CVCA3DCT.png)
+![RYR56UE Static Collision IMM CV-CA-3DCT](images/collision/RYR56UE/imm_3d.png)
 *Figure 5-42: RYR56UE collision time difference — IMM-CV-CA-3DCT*
 
 **Flight RYR8213:**
 
-![RYR8213 Static Collision IMM CV-CA](Images/RYR8213_collision_CVCA.png)
+![RYR8213 Static Collision IMM CV-CA](images/collision/RYR8213/imm_cv_ca.png)
 *Figure 5-43: RYR8213 collision time difference — IMM-CV-CA*
 
-![RYR8213 Static Collision IMM CV-CA-2DCT](Images/RYR8213_collision_CVCA2DCT.png)
+![RYR8213 Static Collision IMM CV-CA-2DCT](images/collision/RYR8213/imm_2d.png)
 *Figure 5-44: RYR8213 collision time difference — IMM-CV-CA-2DCT*
 
-![RYR8213 Static Collision IMM CV-CA-3DCT](Images/RYR8213_collision_CVCA3DCT.png)
+![RYR8213 Static Collision IMM CV-CA-3DCT](images/collision/RYR8213/imm_3d.png)
 *Figure 5-45: RYR8213 collision time difference — IMM-CV-CA-3DCT*
 
 **Flight EXS8L8:**
 
-![EXS8L8 Static Collision IMM CV-CA](Images/EXS8L8_collision_CVCA.png)
+![EXS8L8 Static Collision IMM CV-CA](images/collision/EXS8L8/imm_ca_cv.png)
 *Figure 5-46: EXS8L8 collision time difference — IMM-CV-CA*
 
-![EXS8L8 Static Collision IMM CV-CA-2DCT](Images/EXS8L8_collision_CVCA2DCT.png)
+![EXS8L8 Static Collision IMM CV-CA-2DCT](images/collision/EXS8L8/imm_2d.png)
 *Figure 5-47: EXS8L8 collision time difference — IMM-CV-CA-2DCT*
 
-![EXS8L8 Static Collision IMM CV-CA-3DCT](Images/EXS8L8_collision_CVCA3DCT.png)
+![EXS8L8 Static Collision IMM CV-CA-3DCT](images/collision/EXS8L8/imm_3d.png)
 *Figure 5-48: EXS8L8 collision time difference — IMM-CV-CA-3DCT*
 
 **Average across all static test flights:**
