@@ -140,32 +140,32 @@ Four real flight trajectories were selected with differing dynamics to test pred
 
 #### Flight EXS1204 — Climb with Rapid Turn
 
-![EXS1204 Actual Trajectory](Images/EXS1204_actual_trajectory.png)
+![EXS1204 Actual Trajectory](images/EXS1204/trajectory.jpg)
 *Figure 5-12: Actual trajectory of flight EXS1204 — upward trajectory with rapid direction change*
 
-![EXS1204 RMSE Comparison](Images/EXS1204_RMSE.png)
+![EXS1204 RMSE Comparison](images/EXS1204/Compare35.jpg)
 *Figure 5-16: EXS1204 RMSE vs Time — all predictor methods*
 
-![EXS1204 Best Prediction](Images/EXS1204_best_prediction.png)
+![EXS1204 Best Prediction](images/EXS1204/besttrajectory.jpg)
 *Figure 5-17: EXS1204 best trajectory prediction — IMM-CV-CA-2DCT*
 
 ---
 
 #### Flight EZY89TP — Landing with Clockwise/Anticlockwise Manoeuvres
 
-![EZY89TP Actual Trajectory](Images/EZY89TP_actual_trajectory.png)
+![EZY89TP Actual Trajectory](images/EZY89TP/flight trajectory EZY89TP.jpg)  
 *Figure 5-20: Actual trajectory of flight EZY89TP — landing operation with multiple turns (761 state readings)*
 
-![EZY89TP RMSE Comparison](Images/EZY89TP_RMSE.png)
+![EZY89TP RMSE Comparison](images/EZY89TP/Compare35.jpg)
 *Figure 5-24: EZY89TP RMSE vs Time — all predictor methods*
 
-![EZY89TP Best Prediction](Images/EZY89TP_best_prediction.png)
+![EZY89TP Best Prediction](images/EZY89TP/flight trajectory EZY89TP IMM2D.jpg)
 *Figure 5-25: EZY89TP best trajectory prediction — IMM-CV-CA-2DCT*
 
-![EZY89TP XY Plot](Images/EZY89TP_XY.png)
+![EZY89TP XY Plot](images/EZY89TP/XY.jpg)
 *Figure 5-26: EZY89TP IMM-CV-CA-2DCT XY position plot*
 
-![EZY89TP Z Plot](Images/EZY89TP_Z.png)
+![EZY89TP Z Plot](images/EZY89TP/Z.jpg)
 *Figure 5-27: EZY89TP IMM-CV-CA-2DCT altitude (Z) vs time*
 
 ---
