@@ -118,74 +118,74 @@ Four real flight trajectories were selected with differing dynamics to test pred
 
 #### Flight DAL84 — Descent with Slight Direction Changes
 
-![DAL84 Actual Trajectory](images/DAL84/trajectory.jpg)
+![DAL84 Actual Trajectory                   ](images/DAL84/trajectory.jpg)
 *Figure 5-4: Actual trajectory of flight DAL84*
 
-![DAL84 IMM CV-CA Mode Switching](images/DAL84/CA_CV_Switching.jpg)
+![DAL84 IMM CV-CA Mode Switching            ](images/DAL84/CA_CV_Switching.jpg)
 *Figure 5-5: DAL84 mode switching probabilities — IMM-CV-CA*
 
-![DAL84 IMM CV-CA-CT2D Mode Switching](images/DAL84/IMM2D.jpg)
+![DAL84 IMM CV-CA-CT2D Mode Switching       ](images/DAL84/IMM2D.jpg)
 *Figure 5-6: DAL84 mode switching probabilities — IMM-CV-CA-CT2D*
 
-![DAL84 IMM CV-CA-CT3D Mode Switching](images/DAL84/IMM3D.jpg)
+![DAL84 IMM CV-CA-CT3D Mode Switching       ](images/DAL84/IMM3D.jpg)
 *Figure 5-7: DAL84 mode switching probabilities — IMM-CV-CA-CT3D*
 
-![DAL84 RMSE Comparison](images/DAL84/Compare35.jpg)
+![DAL84 RMSE Comparison          ](images/DAL84/Compare35.jpg)
 *Figure 5-8: DAL84 RMSE vs Time — all predictor methods at Ts = 15s*
 
-![DAL84 Best Prediction](images/DAL84/Best.jpg)
+![DAL84 Best Prediction          ](images/DAL84/Best.jpg)
 *Figure 5-9: DAL84 best trajectory prediction — IMM-CV-CA-3DCT*
 
 ---
 
 #### Flight EXS1204 — Climb with Rapid Turn
 
-![EXS1204 Actual Trajectory](images/EXS1204/trajectory.jpg)
+![EXS1204 Actual Trajectory       ](images/EXS1204/trajectory.jpg)
 *Figure 5-12: Actual trajectory of flight EXS1204 — upward trajectory with rapid direction change*
 
-![EXS1204 RMSE Comparison](images/EXS1204/Compare35.jpg)
+![EXS1204 RMSE Comparison         ](images/EXS1204/Compare35.jpg)
 *Figure 5-16: EXS1204 RMSE vs Time — all predictor methods*
 
-![EXS1204 Best Prediction](images/EXS1204/besttrajectory.jpg)
+![EXS1204 Best Prediction         ](images/EXS1204/besttrajectory.jpg)
 *Figure 5-17: EXS1204 best trajectory prediction — IMM-CV-CA-2DCT*
 
 ---
 
 #### Flight EZY89TP — Landing with Clockwise/Anticlockwise Manoeuvres
 
-![EZY89TP Actual Trajectory](images/EZY89TP/trajectory.jpg)  
+![EZY89TP Actual Trajectory       ](images/EZY89TP/trajectory.jpg)  
 *Figure 5-20: Actual trajectory of flight EZY89TP — landing operation with multiple turns (761 state readings)*
 
-![EZY89TP RMSE Comparison](images/EZY89TP/Compare35.jpg)
+![EZY89TP RMSE Comparison         ](images/EZY89TP/Compare35.jpg)
 *Figure 5-24: EZY89TP RMSE vs Time — all predictor methods*
 
-![EZY89TP Best Prediction](images/EZY89TP/flight_trajectory_EZY89TP_IMM2D.jpg)
+![EZY89TP Best Prediction         ](images/EZY89TP/flight_trajectory_EZY89TP_IMM2D.jpg)
 *Figure 5-25: EZY89TP best trajectory prediction — IMM-CV-CA-2DCT*
 
-![EZY89TP XY Plot](images/EZY89TP/XY.jpg)
+![EZY89TP XY Plot                 ](images/EZY89TP/XY.jpg)
 *Figure 5-26: EZY89TP IMM-CV-CA-2DCT XY position plot*
 
-![EZY89TP Z Plot](images/EZY89TP/Z.jpg)
+![EZY89TP Z Plot                  ](images/EZY89TP/Z.jpg)
 *Figure 5-27: EZY89TP IMM-CV-CA-2DCT altitude (Z) vs time*
 
 ---
 
 #### Flight VLG84NC — Climb with Direction Change
 
-![VLG84NC Actual Trajectory](images/VLG84NC/trajectory.jpg)
+![VLG84NC Actual Trajectory        ](images/VLG84NC/trajectory.jpg)
 *Figure 5-28: Actual trajectory of flight VLG84NC — altitude gain with heading change (378 state readings)*
 
-![VLG84NC RMSE Comparison](images/VLG84NC/RMSE_compare.jpg)
+![VLG84NC RMSE Comparison          ](images/VLG84NC/RMSE_compare.jpg)
 *Figure 5-32: VLG84NC RMSE vs Time — all predictor methods*
 
-![VLG84NC Best Prediction](images/VLG84NC/best_trajectory.jpg)
+![VLG84NC Best Prediction          ](images/VLG84NC/best_trajectory.jpg)
 *Figure 5-33: VLG84NC best trajectory prediction — IMM-CV-CA-CT2D*
 
 ---
 
 #### Overall RMSE Comparison
 
-![Total RMSE All Flights](Images/total_RMSE_comparison.png)
+![Total RMSE All Flights           ](Images/total_RMSE_comparison.png)
 *Figure 5-36: Total RMSE of position for each test flight across all predictor methods (Ts = 15s)*
 
 **IMM-CV-CA-CT2D achieved the best average accuracy: 21.1% more accurate than CV alone and 15.6% more accurate than CA alone.**
@@ -200,57 +200,57 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 **Flight EZY89TP:**
 
-![EZY89TP Static Collision IMM CV-CA](images/collision/EZY89TP/imm_ca_cv.png)
+![EZY89TP Static Collision IMM CV-CA            ](images/collision/EZY89TP/imm_ca_cv.png)
 *Figure 5-37: EZY89TP collision time difference — IMM-CV-CA*
 
-![EZY89TP Static Collision IMM CV-CA-2DCT](images/collision/EZY89TP/imm_2d.png)
+![EZY89TP Static Collision IMM CV-CA-2DCT       ](images/collision/EZY89TP/imm_2d.png)
 *Figure 5-38: EZY89TP collision time difference — IMM-CV-CA-2DCT*
 
-![EZY89TP Static Collision IMM CV-CA-3DCT](images/collision/EZY89TP/imm_3d.png)
+![EZY89TP Static Collision IMM CV-CA-3DCT       ](images/collision/EZY89TP/imm_3d.png)
 *Figure 5-39: EZY89TP collision time difference — IMM-CV-CA-3DCT*
 
 **Flight RYR56UE:**
 
-![RYR56UE Static Collision IMM CV-CA](images/collision/RYR56UE/imm_ca_cv.png)
+![RYR56UE Static Collision IMM CV-CA            ](images/collision/RYR56UE/imm_ca_cv.png)
 *Figure 5-40: RYR56UE collision time difference — IMM-CV-CA*
 
-![RYR56UE Static Collision IMM CV-CA-2DCT](images/collision/RYR56UE/imm_2d.png)
+![RYR56UE Static Collision IMM CV-CA-2DCT       ](images/collision/RYR56UE/imm_2d.png)
 *Figure 5-41: RYR56UE collision time difference — IMM-CV-CA-2DCT*
 
-![RYR56UE Static Collision IMM CV-CA-3DCT](images/collision/RYR56UE/imm_3d.png)
+![RYR56UE Static Collision IMM CV-CA-3DCT       ](images/collision/RYR56UE/imm_3d.png)
 *Figure 5-42: RYR56UE collision time difference — IMM-CV-CA-3DCT*
 
 **Flight RYR8213:**
 
-![RYR8213 Static Collision IMM CV-CA](images/collision/RYR8123/imm_cv_ca.png)
+![RYR8213 Static Collision IMM CV-CA            ](images/collision/RYR8123/imm_cv_ca.png)
 *Figure 5-43: RYR8213 collision time difference — IMM-CV-CA*
 
-![RYR8213 Static Collision IMM CV-CA-2DCT](images/collision/RYR8123/imm_2d.png)
+![RYR8213 Static Collision IMM CV-CA-2DCT       ](images/collision/RYR8123/imm_2d.png)
 *Figure 5-44: RYR8213 collision time difference — IMM-CV-CA-2DCT*
 
-![RYR8213 Static Collision IMM CV-CA-3DCT](images/collision/RYR8123/imm_3d.png)
+![RYR8213 Static Collision IMM CV-CA-3DCT       ](images/collision/RYR8123/imm_3d.png)
 *Figure 5-45: RYR8213 collision time difference — IMM-CV-CA-3DCT*
 
 **Flight EXS8L8:**
 
-![EXS8L8 Static Collision IMM CV-CA](images/collision/EXS8L8/imm_ca_cv.png)
+![EXS8L8 Static Collision IMM CV-CA             ](images/collision/EXS8L8/imm_ca_cv.png)
 *Figure 5-46: EXS8L8 collision time difference — IMM-CV-CA*
 
-![EXS8L8 Static Collision IMM CV-CA-2DCT](images/collision/EXS8L8/imm_2d.png)
+![EXS8L8 Static Collision IMM CV-CA-2DCT        ](images/collision/EXS8L8/imm_2d.png)
 *Figure 5-47: EXS8L8 collision time difference — IMM-CV-CA-2DCT*
 
-![EXS8L8 Static Collision IMM CV-CA-3DCT](images/collision/EXS8L8/imm_3d.png)
+![EXS8L8 Static Collision IMM CV-CA-3DCT        ](images/collision/EXS8L8/imm_3d.png)
 *Figure 5-48: EXS8L8 collision time difference — IMM-CV-CA-3DCT*
 
 **Average across all static test flights:**
 
-![Average Collision IMM CV-CA](images/IMM_CV_CA.png)
+![Average Collision IMM CV-CA             ](images/IMM_CV_CA.png)
 *Figure 5-49: Average collision time difference across all flights — IMM-CV-CA (stable 15–30 s)*
 
-![Average Collision IMM CV-CA-2DCT](images/IMM_2d_td.png)
+![Average Collision IMM CV-CA-2DCT        ](images/IMM_2d_td.png)
 *Figure 5-50: Average collision time difference — IMM-CV-CA-2DCT (best at 15 s)*
 
-![Average Collision IMM CV-CA-3DCT](images/IMM_3d-prediction.png)
+![Average Collision IMM CV-CA-3DCT        ](images/IMM_3d-prediction.png)
 *Figure 5-51: Average collision time difference — IMM-CV-CA-3DCT (reliable at 15 s only)*
 
 ---
@@ -259,26 +259,26 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 A constant-velocity intruder was simulated on an opposing trajectory toward flight VLG8LV.
 
-![Dynamic Collision Simulation](images/Collision_simulation.png)
+![Dynamic Collision Simulation           ](images/Collision_simulation.png)
 *Figure 4-13: Simulated collision with dynamic intruder — owner trajectory (blue), intruder (red)*
 
-![Dynamic Collision IMM CV-CA](images/IMM-CV_CA_dynamic_td.png)
+![Dynamic Collision IMM CV-CA            ](images/IMM-CV_CA_dynamic_td.png)
 *Figure 5-52: Dynamic collision time difference — IMM-CV-CA*
 
-![Dynamic Collision IMM CV-CA-2DCT](images/IMM-2d-dynamic_td.png)
+![Dynamic Collision IMM CV-CA-2DCT       ](images/IMM-2d-dynamic_td.png)
 *Figure 5-53: Dynamic collision time difference — IMM-CV-CA-2DCT (feasible to 25 s)*
 
-![Dynamic Collision IMM CV-CA-3DCT](images/IMM-3d-dynamic_td.png)
+![Dynamic Collision IMM CV-CA-3DCT       ](images/IMM-3d-dynamic_td.png)
 *Figure 5-54: Dynamic collision time difference — IMM-CV-CA-3DCT*
 
 ---
 
 #### Separation Volume Visualisation
 
-![Collision Cylinder](images/separation_volume.png)
+![Collision Cylinder           ](images/separation_volume.png)
 *Figure 4-5: Aircraft IPZ modelled as a collision cylinder (radius = 926 m, height = 304.8 m for owner)*
 
-![Separation Volume Propagation](images/simulated_collision.png)
+![Separation Volume Propagation     ](images/simulated_collision.png)
 *Figure 4-6: Separation volume propagation for a dynamic intruder*
 
 ---
