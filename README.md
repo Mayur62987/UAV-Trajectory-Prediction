@@ -244,13 +244,13 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 **Average across all static test flights:**
 
-![Average Collision IMM CV-CA](images/avg_collision_CVCA.png)
+![Average Collision IMM CV-CA](images/IMM_CV_CA.png)
 *Figure 5-49: Average collision time difference across all flights — IMM-CV-CA (stable 15–30 s)*
 
-![Average Collision IMM CV-CA-2DCT](images/avg_collision_CVCA2DCT.png)
+![Average Collision IMM CV-CA-2DCT](images/IMM_2d_td.png)
 *Figure 5-50: Average collision time difference — IMM-CV-CA-2DCT (best at 15 s)*
 
-![Average Collision IMM CV-CA-3DCT](images/avg_collision_CVCA3DCT.png)
+![Average Collision IMM CV-CA-3DCT](images/IMM_3d-prediction.png)
 *Figure 5-51: Average collision time difference — IMM-CV-CA-3DCT (reliable at 15 s only)*
 
 ---
