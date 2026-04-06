@@ -259,16 +259,16 @@ Four static collision zones were placed at Trajectory Change Points (TCPs) for e
 
 A constant-velocity intruder was simulated on an opposing trajectory toward flight VLG8LV.
 
-![Dynamic Collision Simulation](images/dynamic_collision_simulation.png)
+![Dynamic Collision Simulation](images/Collision_simulation.png)
 *Figure 4-13: Simulated collision with dynamic intruder — owner trajectory (blue), intruder (red)*
 
-![Dynamic Collision IMM CV-CA](images/dynamic_collision_CVCA.png)
+![Dynamic Collision IMM CV-CA](images/IMM-CV_CA_dynamic_td.png)
 *Figure 5-52: Dynamic collision time difference — IMM-CV-CA*
 
-![Dynamic Collision IMM CV-CA-2DCT](images/dynamic_collision_CVCA2DCT.png)
+![Dynamic Collision IMM CV-CA-2DCT](images/IMM-2d-dynamic_td.png)
 *Figure 5-53: Dynamic collision time difference — IMM-CV-CA-2DCT (feasible to 25 s)*
 
-![Dynamic Collision IMM CV-CA-3DCT](images/dynamic_collision_CVCA3DCT.png)
+![Dynamic Collision IMM CV-CA-3DCT](images/IMM-3d-dynamic_td.png)
 *Figure 5-54: Dynamic collision time difference — IMM-CV-CA-3DCT*
 
 ---
