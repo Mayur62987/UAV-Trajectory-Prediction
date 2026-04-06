@@ -153,13 +153,13 @@ Four real flight trajectories were selected with differing dynamics to test pred
 
 #### Flight EZY89TP — Landing with Clockwise/Anticlockwise Manoeuvres
 
-![EZY89TP Actual Trajectory](images/EZY89TP/flight trajectory EZY89TP.jpg)  
+![EZY89TP Actual Trajectory](images/EZY89TP/trajectory.jpg)  
 *Figure 5-20: Actual trajectory of flight EZY89TP — landing operation with multiple turns (761 state readings)*
 
 ![EZY89TP RMSE Comparison](images/EZY89TP/Compare35.jpg)
 *Figure 5-24: EZY89TP RMSE vs Time — all predictor methods*
 
-![EZY89TP Best Prediction](images/EZY89TP/flight trajectory EZY89TP IMM2D.jpg)
+![EZY89TP Best Prediction](images/EZY89TP/flight_trajectory_EZY89TP_IMM2D.jpg)
 *Figure 5-25: EZY89TP best trajectory prediction — IMM-CV-CA-2DCT*
 
 ![EZY89TP XY Plot](images/EZY89TP/XY.jpg)
