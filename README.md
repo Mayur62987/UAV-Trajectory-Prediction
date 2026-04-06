@@ -118,22 +118,22 @@ Four real flight trajectories were selected with differing dynamics to test pred
 
 #### Flight DAL84 — Descent with Slight Direction Changes
 
-![DAL84 Actual Trajectory](Images/DAL84/Trajectory.jpg)
+![DAL84 Actual Trajectory](images/DAL84/trajectory.jpg)
 *Figure 5-4: Actual trajectory of flight DAL84*
 
-![DAL84 IMM CV-CA Mode Switching](Images/DAL84/IMM2D.jpg)
+![DAL84 IMM CV-CA Mode Switching](images/DAL84/CA_CV_Switching.jpg)
 *Figure 5-5: DAL84 mode switching probabilities — IMM-CV-CA*
 
-![DAL84 IMM CV-CA-CT2D Mode Switching](Images/DAL84_IMM_CVCA_CT2D_modes.png)
+![DAL84 IMM CV-CA-CT2D Mode Switching](images/DAL84/IMM2D.jpg)
 *Figure 5-6: DAL84 mode switching probabilities — IMM-CV-CA-CT2D*
 
-![DAL84 IMM CV-CA-CT3D Mode Switching](Images/DAL84_IMM_CVCA_CT3D_modes.png)
+![DAL84 IMM CV-CA-CT3D Mode Switching](images/DAL84/IMM3D.jpg)
 *Figure 5-7: DAL84 mode switching probabilities — IMM-CV-CA-CT3D*
 
-![DAL84 RMSE Comparison](Images/DAL84_RMSE.png)
+![DAL84 RMSE Comparison](images/DAL84/Compare35.jpg)
 *Figure 5-8: DAL84 RMSE vs Time — all predictor methods at Ts = 15s*
 
-![DAL84 Best Prediction](Images/DAL84_best_prediction.png)
+![DAL84 Best Prediction](images/DAL84/best.jpg)
 *Figure 5-9: DAL84 best trajectory prediction — IMM-CV-CA-3DCT*
 
 ---
@@ -416,6 +416,8 @@ UAV-Trajectory-Prediction/
 │       ├── flight_table.mat
 │       ├── filtered_data.mat
 │       └── For_linear_filter.mat
+|
+├── plotting/                    ← Plotting Functions 
 │
 ├── images/                      ← Thesis figures
 │
