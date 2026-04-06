@@ -172,13 +172,13 @@ Four real flight trajectories were selected with differing dynamics to test pred
 
 #### Flight VLG84NC — Climb with Direction Change
 
-![VLG84NC Actual Trajectory](Images/VLG84NC_actual_trajectory.png)
+![VLG84NC Actual Trajectory](images/VLG84NC/trajectory.jpg)
 *Figure 5-28: Actual trajectory of flight VLG84NC — altitude gain with heading change (378 state readings)*
 
-![VLG84NC RMSE Comparison](Images/VLG84NC_RMSE.png)
+![VLG84NC RMSE Comparison](Images/VLG84NC/RMSE_compare.jpg)
 *Figure 5-32: VLG84NC RMSE vs Time — all predictor methods*
 
-![VLG84NC Best Prediction](Images/VLG84NC_best_prediction.png)
+![VLG84NC Best Prediction](Images/VLG84NC/best_prediction.jpg)
 *Figure 5-33: VLG84NC best trajectory prediction — IMM-CV-CA-CT2D*
 
 ---
